@@ -8,4 +8,3 @@ def no_c(my_string):
         while 'C' in list:
             list.remove('C')
     return ''.join(list)
-    
