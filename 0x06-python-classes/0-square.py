@@ -5,6 +5,7 @@
 
     '''
 
+
 class Square:
     '''Empty class
 
