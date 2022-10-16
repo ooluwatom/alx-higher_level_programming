@@ -50,7 +50,7 @@ class Square:
     def my_print(self):
         '''Prints the square with the character #'''
         if self.__size == 0:
-            pass
+            print()
         else:
             i, j = 1, 1
             for i in range(self.__size):
