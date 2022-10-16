@@ -52,7 +52,7 @@ class Square:
         if self.__size == 0:
             print("", end='')
         else:
-            i,j = 1
+            i,j = 1,1
             for i in range(self.__size + 1):
                 length = ''
                 for j in range(self.__size + 1):
