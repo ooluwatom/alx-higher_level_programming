@@ -52,10 +52,10 @@ class Square:
         if self.__size == 0:
             print("", end='')
         else:
-            i,j = 0,0
-            for i in range(self.__size + 1):
+            i,j = 1,1
+            for i in range(self.__size):
                 length = ''
-                for j in range(self.__size + 1):
+                for j in range(self.__size):
                     length += '#'
                     j += 1
                 print(length)
