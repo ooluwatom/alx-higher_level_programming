@@ -33,8 +33,8 @@ class Square:
                 or type(position[1]) is not int
                 or position[0] < 0
                 or position[1] < 0
-                or not position[0]
-                or not position[1]
+                or (position and not position[0])
+                or (position and not position[1])
                 or len(position) != 2):
             raise TypeError("position must be a tuple of 2 positive integers")
 
@@ -65,8 +65,8 @@ class Square:
                 or type(value[1]) is not int
                 or value[0] < 0
                 or value[1] < 0
-                or not value[0]
-                or not value[1]
+                or (value and not value[0])
+                or (value and not value[1])
                 or len(value) != 2):
             raise TypeError("position must be a tuple of 2 positive integers")
 
