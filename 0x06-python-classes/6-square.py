@@ -34,7 +34,7 @@ class Square:
             or position[0] < 0 \
             or position[1] < 0 \
             or len(position) != 2:
-                raise TypeError("position must be a tuple of 2 positive integers")
+            raise TypeError("position must be a tuple of 2 positive integers")
 
         self.__size = size
         self.__position = position
@@ -64,7 +64,7 @@ class Square:
             or value[0] < 0 \
             or value[1] < 0 \
             or len(value) != 2:
-                raise TypeError("position must be a tuple of 2 positive integers")
+            raise TypeError("position must be a tuple of 2 positive integers")
 
         self.__position = value
 
