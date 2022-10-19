@@ -12,7 +12,8 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         '''__init__
 
-        The __init__ method initializes the width and height methods of the Rectangle.
+        The __init__ method initializes the width and\
+             height methods of the Rectangle.
 
         Attributes:
             width (:obj:'int', optional): The width of the Rectangle
