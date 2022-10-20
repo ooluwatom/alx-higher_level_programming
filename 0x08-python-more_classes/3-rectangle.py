@@ -95,6 +95,6 @@ class Rectangle:
                 i += 1
             return side
 
-        def str(self):
+        def print(self):
             '''Prints the rectangle'''
             return self.__print_rectangle()
