@@ -85,7 +85,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             print()
         else:
-            i, j = 1,1
+            i, j = 1, 1
             for i in range(self.__height + 1):
                 side = ''
                 for j in range(self.__width + 1):
@@ -93,7 +93,7 @@ class Rectangle:
                     j += 1
                 print(side)
                 i += 1
-        
+
         def __str__(self):
             '''Prints the rectangle'''
             return self.__print_rectangle()
