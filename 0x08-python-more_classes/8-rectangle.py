@@ -118,7 +118,7 @@ class Rectangle:
                 return rect_1
             else:
                 return rect_2
-        elif isinstance(rect_1, Rectangle) == False:
+        elif isinstance(rect_1, Rectangle) is False:
             raise TypeError('rect_1 must be an instance of Rectangle')
-        elif isinstance(rect_2, Rectangle) == False:
+        elif isinstance(rect_2, Rectangle) is False:
             raise TypeError('rect_2 must be an instance of Rectangle')
