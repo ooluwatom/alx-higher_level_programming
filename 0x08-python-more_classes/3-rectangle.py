@@ -91,8 +91,9 @@ class Rectangle:
                 for j in range(self.__width + 1):
                     side += '#'
                     j += 1
-                print(side)
+                side += '\n'
                 i += 1
+            return side
 
         def __str__(self):
             '''Prints the rectangle'''
