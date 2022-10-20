@@ -74,27 +74,16 @@ class Rectangle:
         else:
             return (2 * self.__width) + (2 * self.__height)
 
-    def __print_rectangle(self):
-        '''
+        def __str__(self):
+            '''
         Prints the rectangle with the character '#'
 
         Return:
-        An empty string if height or width is 0
+        The string of the rectangle
         '''
-
+        rectangle = ''
         if self.__width == 0 or self.__height == 0:
-            print()
+            return rectangle
         else:
-            i, j = 1, 1
-            for i in range(self.__height + 1):
-                side = ''
-                for j in range(self.__width + 1):
-                    side += '#'
-                    j += 1
-                side += '\n'
-                i += 1
-            return side
-
-        def print(self):
-            '''Prints the rectangle'''
-            return self.__print_rectangle()
+            for i in range(self.__height):
+                rectangle += ('#' * self.__width) + '\n'
