@@ -74,32 +74,32 @@ class Rectangle:
         else:
             return (2 * self.__width) + (2 * self.__height)
 
-        def __str__(self):
-            '''
-            Prints the rectangle with the character '#'
+    def __str__(self):
+        '''
+        Prints the rectangle with the character '#'
 
-            Return:
-            The string of the rectangle
-            '''
-            rectangle = ''
-            if self.__width == 0 or self.__height == 0:
-                return rectangle
-            else:
-                for i in range(self.__height):
-                    rectangle += ('#' * self.__width) + '\n'
+        Return:
+        The string of the rectangle
+        '''
+        rectangle = ''
+        if self.__width == 0 or self.__height == 0:
             return rectangle
+        else:
+            for i in range(self.__height):
+                rectangle += ('#' * self.__width) + '\n'
+        return rectangle
 
-        def __repr__(self):
-            '''Returns the representation of the Rectangle'''
-            w = str(eval('self.__width'))
-            h = str(eval('self.__height'))
+    def __repr__(self):
+        '''Returns the representation of the Rectangle'''
+        w = str(eval('self.__width'))
+        h = str(eval('self.__height'))
 
-            return 'Rectangle(' + w + ', ' + h + ')'
+        return 'Rectangle(' + w + ', ' + h + ')'
 
-        def __del__(self):
-            '''
-            Prints a message when an instance of Rectangle is deleted
+    def __del__(self):
+        '''
+        Prints a message when an instance of Rectangle is deleted
 
-            '''
+        '''
 
-            print("Bye rectangle...")
+        print("Bye rectangle...")
