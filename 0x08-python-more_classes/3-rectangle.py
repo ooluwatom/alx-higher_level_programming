@@ -87,10 +87,11 @@ class Rectangle:
         else:
             i, j = 1,1
             for i in range(self.__height + 1):
+                side = ''
                 for j in range(self.__width + 1):
-                    print('#', end='')
+                    side += '#'
                     j += 1
-                print('\n')
+                print(side)
                 i += 1
         
         def __str__(self):
