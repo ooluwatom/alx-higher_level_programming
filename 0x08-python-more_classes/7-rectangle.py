@@ -90,7 +90,7 @@ class Rectangle:
             return rectangle
         else:
             for i in range(self.__height):
-                rectangle += ('#' * self.__width) + '\n'
+                rectangle += (str(self.print_symbol) * self.__width) + '\n'
         return rectangle[:-1]
 
     def __repr__(self):
