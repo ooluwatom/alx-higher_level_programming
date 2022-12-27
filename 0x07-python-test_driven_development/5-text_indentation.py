@@ -10,3 +10,5 @@ def text_indentation(text):
     for letter in text:
         if letter == '.' or letter == '?' or letter == ':':
             text.replace(text[letter + 1], '\n\n')
+        else:
+            pass
