@@ -9,7 +9,9 @@ def text_indentation(text):
         raise TypeError('text must be a string')
     for letter in text:
         if letter == '.' or letter == '?' or letter == ':':
-            text.replace(text[letter + 1], '\n\n')
+            print(letter, end='\n\n')
         else:
-            pass
-    return text
+            print(letter, end='')
+    print(text)
+
+text_indentation('Tomi.boy')
