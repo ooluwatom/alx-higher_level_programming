@@ -12,3 +12,4 @@ def text_indentation(text):
             text.replace(text[letter + 1], '\n\n')
         else:
             pass
+    return text
