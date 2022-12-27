@@ -12,6 +12,3 @@ def text_indentation(text):
             print(letter, end='\n\n')
         else:
             print(letter, end='')
-    print(text)
-
-text_indentation('Tomi.boy')
