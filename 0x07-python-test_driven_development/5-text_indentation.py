@@ -7,8 +7,16 @@ def text_indentation(text):
     '''Function to add lines'''
     if type(text) is not str:
         raise TypeError('text must be a string')
-    for letter in text:
-        if letter == '.' or letter == '?' or letter == ':':
-            print(letter, end='\n\n')
-        else:
-            print(letter, end='')
+    c = 0
+    while c < len(text) and text[c] == ' ':
+        c += 1
+
+    while c < len(text):
+        print(text[c], end="")
+        if text[c] == "\n" or text[c] in ".?:":
+            if text[c] in ".?:":
+                print("\n")
+            c += 1
+            while c < len(text) and text[c] == ' ':
+                c += 1
+            continue
