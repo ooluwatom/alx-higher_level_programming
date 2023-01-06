@@ -9,6 +9,4 @@ import json
 def load_from_json_file(filename):
     '''Loads object from a json file'''
     with open(filename) as f:
-        f = json.load(f)
-        for i in f:
-            print(i)
+        return json.load(f)
