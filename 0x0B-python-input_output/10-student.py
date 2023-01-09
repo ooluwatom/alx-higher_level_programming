@@ -15,4 +15,5 @@ class Student:
         '''Retrieves a dictionary representation of a student instance'''
         if isinstance(attrs, list):
             return attrs.__dict__
-        return self.__dict__
+        else:
+            return self.__dict__
