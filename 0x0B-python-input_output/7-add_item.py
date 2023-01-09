@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-'''os modules'''
+"""Add all arguments to a Python list and save them to a file."""
 from os import path
-'''sys module'''
+"""Add all arguments to a Python list and save them to a file."""
 from sys import argv
+
 save_to_json_file = __import__('7-save_to_json_file').save_to_json_file
 load_from_json_file = __import__('8-load_from_json_file').load_from_json_file
 
