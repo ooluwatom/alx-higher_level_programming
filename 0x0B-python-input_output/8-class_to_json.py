@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-'''json module'''
-import json
-
 '''This function returns the dictionary description for\
      Json serialization of an object'''
 
