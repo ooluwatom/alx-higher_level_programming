@@ -87,5 +87,6 @@ class Rectangle(Base):
     def display(self):
         '''Display function to print the rectangle'''
         i = 1
-        while i in range(self.__height + 1):
+        while i < (self.__height + 1):
             print('#' * self.__width)
+            i += 1
