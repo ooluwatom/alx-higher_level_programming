@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-'''Base Class'''
+'''Base Class
+
+    This is the base class for the entire operation'''
 
 
 class Base:
