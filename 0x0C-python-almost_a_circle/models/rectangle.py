@@ -94,4 +94,4 @@ class Rectangle(Base):
     def __str__(self):
         '''__str__ function'''
         return f'[Rectangle] ({self.id}) {self.__x}/{self.__y} - \
-            {self.__width}/{self.__height}'
+{self.__width}/{self.__height}'
