@@ -86,7 +86,13 @@ class Rectangle(Base):
 
     def display(self):
         '''Display function to print the rectangle'''
+        if self.__y > 0:
+            print('\n' * (self.__y - 1))
         i = 1
+        if self.__width > 0:
+            while i < (self.__height + 1):
+                print(' ' * self.__x + '#' * self.__width)
+                i += 1
         while i < (self.__height + 1):
             print('#' * self.__width)
             i += 1
