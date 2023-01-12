@@ -50,3 +50,15 @@ class Base:
             return les
         else:
             return json.JSONDecoder().decode(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        '''Returns an instance with all attributes already set'''
+        if cls.__name__ == 'Square':
+            dummy = cls(3)
+
+        if cls.__name__ == 'Rectangle':
+            dummy = cls(3, 4)
+
+        dummy.update(**dictionary)
+        return dummy
