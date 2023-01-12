@@ -45,7 +45,7 @@ class Base:
     @staticmethod
     def from_json_string(json_string):
         '''Returns the list of the json string representation'''
-        if len(json_string) < 1:
+        if json_string is None or len(json_string) < 1:
             return '[]'
         else:
             return json.JSONDecoder().decode(json_string)
