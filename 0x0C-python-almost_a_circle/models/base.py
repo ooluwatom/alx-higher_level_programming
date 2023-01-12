@@ -26,16 +26,19 @@ class Base:
         else:
             return json.JSONEncoder().encode(list_dictionaries)
 
+    @classmethod
     def save_to_file(cls, list_objs):
         '''Write Json string representation of list_objs to a file'''
-        filename = f'{cls.__name__}.json'
-        with open(filename, mode='w', encoding='utf-8') as f:
-            if list_objs is None:
-                return f.write(cls.to_json_string(None))
+        filename = f'{cls}.json'
+        list_dic = []
+        if list_objs is None:
+            pass
+        else:
+            for i in range(len(list_objs)):
+                list_dic.append(list_objs[i].to_dictionary())
 
-            json_attrs = []
+        lists = cls.to_json_string(list_dic)
 
-            for elem in list_objs:
-                json_attrs.append(elem.to_dictionary())
+        with open(filename, 'w') as f:
+            f.write(lists)
 
-            return f.write(cls.to_json_string(json_attrs))
