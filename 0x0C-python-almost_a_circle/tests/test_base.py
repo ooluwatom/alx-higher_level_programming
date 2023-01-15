@@ -10,7 +10,6 @@ from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
 
-
 class TestBase(unittest.TestCase):
     """
     A class to test the Base Class
@@ -174,3 +173,6 @@ class TestBase(unittest.TestCase):
             "create() takes 1 positional argument but 2 were given",
             str(msg.exception)
         )
+
+if __name__ == '__main__':
+    unittest.main()

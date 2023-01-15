@@ -134,3 +134,6 @@ class TestRectangle(unittest.TestCase):
         with self.assertRaises(ValueError):
             Rectangle(5, 9, 5, -4798576398576)
             raise ValueError()
+
+if __name__ == '__main__':
+    unittest.main()
