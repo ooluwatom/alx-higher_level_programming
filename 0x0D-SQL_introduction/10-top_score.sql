@@ -1,4 +1,4 @@
---  Script that displays all the  records in the table second_table
--- Displays in descending order of score with score and name
+-- Lists all records of the table `second_table`
+-- of the database `hbtn_0c_0` in MySQL Server.
 
-SELECT score, name FROM second_table GROUP BY score DESC;
+SELECT score, name FROM second_table ORDER BY score DESC;
