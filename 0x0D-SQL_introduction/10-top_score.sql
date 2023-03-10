@@ -2,4 +2,4 @@
 -- Displays in descending order of score with score and name
 SELECT score, name
 FROM second_table
-GROUP BY score DESC;
+GROUP BY `score` DESC;
