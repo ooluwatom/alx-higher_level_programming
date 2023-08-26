@@ -1,5 +1,9 @@
 {
     "python.analysis.extraPaths": [
         "./0x0C-python-almost_a_circle/models"
-    ]
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none"
 }
