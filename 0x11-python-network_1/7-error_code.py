@@ -14,5 +14,5 @@ if __name__ == '__main__':
         r.raise_for_status()
         print(r.text)
 
-    except r.status_code >= 400:
+    except ValueError:
         print('Error code: {}'.format(r.status_code))
